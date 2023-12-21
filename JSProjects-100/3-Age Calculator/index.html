@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Calculator</title>
+
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="box">
+      <div class="icon">
+        <div class="iconn">
+          <dotlottie-player
+            src="https://lottie.host/1c96f924-3f67-46bd-8a3f-e10bbf87ecc3/I9wRwR1IUD.json"
+            background="transparent"
+            speed="1"
+            style="width: 150px; height: 150px"
+            loop
+            autoplay
+            id="icon-age"
+          ></dotlottie-player>
+        </div>
+        <div class="iconn">
+          <dotlottie-player
+            src="https://lottie.host/029db54b-6a3b-4e73-9831-fa4f08245ca9/qASaXaXoJ9.json"
+            background="transparent"
+            speed="1"
+            style="width: 150px; height: 150px"
+            loop
+            autoplay
+            id="icon-child"
+          ></dotlottie-player>
+        </div>
+        <div class="iconn">
+          <dotlottie-player
+            src="https://lottie.host/469825fc-fe21-4422-9e6f-3cbd631ab6f7/aXXy7Uiu49.json"
+            background="transparent"
+            speed="1"
+            style="width: 150px; height: 150px"
+            loop
+            autoplay
+            id="icon-teen"
+          ></dotlottie-player>
+        </div>
+        <div class="iconn">
+          <dotlottie-player
+            src="https://lottie.host/bd624949-0c98-409a-adc4-22ac9a0939ff/n6D5iuAdZZ.json"
+            background="transparent"
+            speed="1"
+            style="width: 150px; height: 150px"
+            loop
+            autoplay
+            id="icon-men"
+          ></dotlottie-player>
+        </div>
+        <div class="iconn">
+          <dotlottie-player
+            src="https://lottie.host/ae90dd56-45d7-4024-8779-eaf996cc3c67/9ny333yXeo.json"
+            background="transparent"
+            speed="1"
+            style="width: 150px; height: 150px"
+            loop
+            autoplay
+            id="icon-old"
+          ></dotlottie-player>
+        </div>
+      </div>
+
+      <h2>Age Calculator</h2>
+      <h3>Enter Your Date Of Birth</h3>
+      <form>
+        <div>
+          <input type="date" class="input-date" id="age" required />
+        </div>
+        <div>
+          <button id="btn-age">Calculate Age</button>
+        </div>
+        <div id="result"></div>
+      </form>
+    </div>
+  </body>
+
+  <script src="./script.js"></script>
+</html>

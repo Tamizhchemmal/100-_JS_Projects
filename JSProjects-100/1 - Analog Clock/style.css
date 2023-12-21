@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap");
+body {
+  margin: 0;
+  background-color: rgb(243, 237, 200);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.clock {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  border: 5px double #7d0a0a;
+  background-color: #ffffff;
+  position: relative;
+}
+.clock::before {
+  content: "";
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: #7d0a0a;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+.number {
+  --rotate: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 40px;
+  color: #7d0a0a;
+  font-family: Rubik Doodle Shadow;
+  transform: rotate(var(--rotate));
+}
+.number-1 {
+  --rotate: 30deg;
+}
+.number-2 {
+  --rotate: 60deg;
+}
+.number-3 {
+  --rotate: 90deg;
+}
+.number-4 {
+  --rotate: 120deg;
+}
+.number-5 {
+  --rotate: 150deg;
+}
+.number-6 {
+  --rotate: 180deg;
+}
+.number-7 {
+  --rotate: 210deg;
+}
+.number-8 {
+  --rotate: 240deg;
+}
+.number-9 {
+  --rotate: 270deg;
+}
+.number-10 {
+  --rotate: 300deg;
+}
+.number-11 {
+  --rotate: 330deg;
+}
+
+.needle {
+  position: absolute;
+  width: 8px;
+  height: 40%;
+  left: 50%;
+  bottom: 50%;
+  transform: translateX(-50%);
+  background-color: #7d0a0a;
+
+  transform-origin: bottom;
+  rotate: 90deg;
+  z-index: 8;
+  border: 1px solid black;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}

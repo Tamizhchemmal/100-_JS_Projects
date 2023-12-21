@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap");
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #092635;
+  font-family: "Libre Baskerville", serif;
+  font-size: 15px;
+}
+
+.box {
+  height: 55%;
+  width: 40%;
+  background-color: #9ec8b9;
+  text-align: center;
+  border-radius: 15px 10px;
+}
+#btn-age {
+  margin-top: 15px;
+  padding: 15px 10px;
+  font-size: 15px;
+  color: aliceblue;
+  outline-offset: 15px;
+  border-radius: 15px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: rgb(92, 131, 116);
+  box-shadow: 0 5px 0 rgb(72, 107, 94);
+  /* transition: all 0.3s linear; */
+}
+#btn-age:active {
+  box-shadow: none;
+  transform: translateY(5px);
+}
+
+.input-date {
+  padding: 10px 5px;
+  font-size: 15px;
+  border-radius: 15px;
+  border: none;
+  width: 50%;
+}
+.iconn {
+  display: flex;
+  justify-content: center;
+}
+
+#icon-child {
+  display: none;
+}
+#icon-teen {
+  display: none;
+}
+#icon-men {
+  display: none;
+}
+#icon-old {
+  display: none;
+}
+#result {
+  font-size: 20px;
+  margin-top: 20px;
+  color: #092635;
+}
